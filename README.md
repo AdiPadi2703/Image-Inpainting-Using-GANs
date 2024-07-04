@@ -18,4 +18,18 @@ The generator used is the same as proposed in the paper, except for the contextu
 
 ## Training
 
-The main difference between the original implementation and this project is in the way the model is trained.  Along with the usual hinge loss for the generator, a reconstruction loss is added (L1 Loss) since it gave better results than without. The weights for reconstruction and hinge loss are 1 and 0.01 respectively.  Also as mentioned, the discriminator only takes in the predicted image as input.  The model was trained for a maximum of _ iterations.
+The main difference between the original implementation and this project is in the way the model is trained.  Along with the usual hinge loss for the generator, a reconstruction loss is added (L1 Loss) since it gave better results than without. The weights for reconstruction and hinge loss are 1 and 0.01 respectively.  Also as mentioned, the discriminator only takes in the predicted image as input.  The model was trained for a maximum of 200000 * 30 iterations.
+
+## Results
+
+The results after training for a few epochs varied widely depending on the images as shown below.  Faces which aren't facing directly at the viewer gave poor results probably due to a dataset imbalance.  Also, articles such as glasses and hats were removed after inpainting as desired.
+
+## Possible Improvements
+
+Due to constraints on compute resources, the model could not be trained for more epochs.  More training could definitely improve results.  In addition, a more careful analysis of the dataset could help in reducing bias towards certain images.  Using different ways of calculating loss could also be done.  Of course other architectures could definitely be used.
+
+## References
+
+-> <a href="https://arxiv.org/abs/1806.03589">Original Paper proposing DeepFillV2</a><br>
+-> <a href="https://github.com/avalonstrel/GatedConvolution_pytorch">DeepFillV2 with Self Attention</a><br>
+-> <a href="https://arxiv.org/abs/1805.08318">Paper on Self Attention for GANs</a><br>
