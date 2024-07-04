@@ -22,7 +22,7 @@ The main difference between the original implementation and this project is in t
 
 ## Results
 
-The results after training for a few epochs varied widely depending on the images as shown below.  Faces which aren't facing directly at the viewer gave poor results probably due to a dataset imbalance.  Also, articles such as glasses and hats were removed after inpainting as desired.  The following samples are taken from the validation set.
+The results after training for a few epochs varied widely depending on the images as shown below.  Faces that aren't facing directly at the viewer gave poor results probably due to a dataset imbalance.  Also, articles such as glasses and hats were removed after inpainting as desired.  The following samples are taken from the validation set.
 
 ### Samples where the model's performance was acceptable
 
@@ -36,12 +36,12 @@ The results after training for a few epochs varied widely depending on the image
 <img src="Results/sample8.png">
 <img src="Results/sample9.png">
 
-It can be seen that the model doesn't handle elaborate poses and complete face coverage.  Further samples of failed results can be found in the Results folder.  Elaborate facial expressions also seem to be a problem (as can be seen in sample7.png).  These could suggest a bias as mentioned earlier resulting from the imbalance in the dataset.
+It can be seen that the model doesn't handle elaborate poses and complete face coverage.  Further samples of failed results can be found in the Results folder.  Elaborate facial expressions also seem problematic (as seen in sample7.png).  These could suggest a bias as mentioned earlier resulting from the imbalance in the dataset.
 
 
 ## Possible Improvements
 
-Due to constraints on compute resources, the model could not be trained for more epochs.  More training could definitely improve results.  In addition, a more careful analysis of the dataset could help in reducing bias towards certain images.  Using different ways of calculating loss could also be done.  Of course other architectures could definitely be used.
+Due to constraints on compute resources, the model could not be trained for more epochs.  More training could improve results.  In addition, a more careful analysis of the dataset could help in reducing bias towards certain images.  Using different ways of calculating loss could also be done.  Of course, other architectures could be used.
 
 ## References
 
