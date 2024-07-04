@@ -6,9 +6,9 @@ This project aims at implementing a <a href="https://arxiv.org/abs/1806.03589">D
 
 ## Dataset
 
-Images from the CelebA dataset available <a href="https://www.kaggle.com/datasets/jessicali9530/celeba-dataset">here</a>.  The images are normalized and resized to 256x256.  For this project, only SQUARE masks of size 128x128 are used and are placed in random locations.<br><br>
+Images from the CelebA dataset available <a href="https://www.kaggle.com/datasets/jessicali9530/celeba-dataset">here</a>.  The images are normalized and resized to 256x256.  For this project, only SQUARE masks of size 128x128 are used and are placed in random locations.<br>
 
-The dataset is then split into training and validation (9:1 split) with a batch size of 2 for training (due to memory constraints). 
+The dataset is then split into training and validation (64 images for validation) with a batch size of 2 for training (due to memory constraints). 
 
 ## Model
 
