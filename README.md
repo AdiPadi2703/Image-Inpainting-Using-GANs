@@ -22,7 +22,22 @@ The main difference between the original implementation and this project is in t
 
 ## Results
 
-The results after training for a few epochs varied widely depending on the images as shown below.  Faces which aren't facing directly at the viewer gave poor results probably due to a dataset imbalance.  Also, articles such as glasses and hats were removed after inpainting as desired.
+The results after training for a few epochs varied widely depending on the images as shown below.  Faces which aren't facing directly at the viewer gave poor results probably due to a dataset imbalance.  Also, articles such as glasses and hats were removed after inpainting as desired.  The following samples are taken from the validation set.
+
+### Samples where the model performance was acceptable
+
+<img src="Results/sample1.png">
+<img src="Results/sample2.png">
+<img src="Results/sample3.png">
+<img src="Results/sample4.png">
+
+## Samples where the model failed
+
+<img src="Results/sample8.png">
+<img src="Results/sample9.png">
+
+It can be seen that the model doesn't handle elaborate poses and complete face coverage.  Further samples of failed results can be found in the Results folder.  Elaborate facial expressions also seem to be a problem (as can be seen in sample7.png).  These could suggest a bias as mentioned earlier resulting from the imbalance in the dataset.
+
 
 ## Possible Improvements
 
