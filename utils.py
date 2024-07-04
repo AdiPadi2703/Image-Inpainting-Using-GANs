@@ -14,7 +14,7 @@ Implementation of Spectral Normalization for PyTorch.
 
 Original Source: https://gist.github.com/rosinality/a96c559d84ef2b138e486acf27b5a56e
 
-PyTorch has a built in function for spectral norm, however it is not compatible with torch.cuda.amp (mixed precision)
+PyTorch has a builtin function for spectral norm, however it is not compatible with torch.cuda.amp (mixed precision)
 since torch.dot is not added to the list of operations that are compatible with amp.
 
 '''
