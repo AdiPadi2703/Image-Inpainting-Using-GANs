@@ -24,14 +24,14 @@ The main difference between the original implementation and this project is in t
 
 The results after training for a few epochs varied widely depending on the images as shown below.  Faces which aren't facing directly at the viewer gave poor results probably due to a dataset imbalance.  Also, articles such as glasses and hats were removed after inpainting as desired.  The following samples are taken from the validation set.
 
-### Samples where the model performance was acceptable
+### Samples where the model's performance was acceptable
 
 <img src="Results/sample1.png">
 <img src="Results/sample2.png">
 <img src="Results/sample3.png">
 <img src="Results/sample4.png">
 
-## Samples where the model failed
+### Samples where the model failed
 
 <img src="Results/sample8.png">
 <img src="Results/sample9.png">
