@@ -1,4 +1,4 @@
-# Image-Inpainting-Using-GANs
+# Image Inpainting Using GANs
 
 ## Overview
 
